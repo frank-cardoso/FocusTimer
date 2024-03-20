@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./src/main.js" defer></script>
+  <title>FocusTimer</title>
+</head>
+<body>
+  <div class="page">
+
+    <main class="boxTimer">
+      <div class="focusTimer">
+        <span id="minutes">25</span>
+        :
+        <span id="seconds">00</span>
+      </div>
+
+      <nav id="controls">
+
+        <button >
+          <img data-action="toggleRunning" src="./assets/play.svg" alt="Começar contador">
+        </button>
+
+        <button >
+          <img data-action="reset" src="./assets/stop.svg" alt="Pausar contador">
+        </button>
+
+        <button >
+          <img data-action="timeUp" src="./assets/timeUp.svg" alt="Aumentar 5 minutos">
+        </button>
+
+        <button >
+          <img data-action="timeDown" src="./assets/timeDown.svg" alt="Diminuir 5 minutos">
+        </button>
+    
+      </nav>
+
+    </main>
+
+    <aside id="soundControls">
+      <button class="card" data-sound="forest">
+        <img src="./assets/forest.svg" alt="Som de floresta">
+      </button>
+
+      <button class="card" data-sound="rain">
+        <img src="./assets/rain.svg" alt="Som de chuva">
+      </button>
+
+      <button class="card" data-sound="coffe">
+        <img src="./assets/coffe.svg" alt="Vibrações cafeteria">
+      </button>
+
+      <button class="card" data-sound="fireplace">
+        <img src="./assets/fireplace.svg" alt="Som de fogueira">
+      </button>
+
+    </aside>
+    
+  </div>
+</body>
+</html>

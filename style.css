@@ -1,0 +1,102 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --font-color: #323238;
+  
+    --bg-color: #fff;
+  
+    --bg-card: #E1E1E6;
+    --bg-card-selected: #02799D;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+  
+    font-family: var(--main-font);
+    color: var(--font-color);
+  
+    height: 100vh;
+  
+    padding: 2rem;
+  }
+  
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    margin: 0 auto;
+  
+    height: 100%;
+  
+    max-width: 52.25rem;
+  }
+  
+  .boxTimer nav {
+    margin-top: 1rem;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .boxTimer nav button img {
+    width: 2.5rem;
+  }
+  
+  .focusTimer {
+    font-size: clamp(5rem, 10vw + 1rem, 7.5rem);
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #soundControls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: var(--bg-card);
+  
+    border-radius: 24px;
+  
+    padding: 1.5rem;
+  
+    transition: all .2s;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .selected{
+    background-color: var(--bg-card-selected);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .selected img{
+    filter: brightness(10);
+  }
+  
+  
+  @media (min-width: 740px) {
+    .page {
+      flex-direction: row;
+    }
+    .card {
+      padding: 2.2rem;
+    }
+  
+    .boxTimer nav button img  {
+      width: 3rem;
+    }
+  }
