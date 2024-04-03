@@ -16,5 +16,5 @@ Apresento o projeto de um timer em JavaScript, com destaque para a modularizaç�
 
 <h2>🔗 Página</h2>
 <p>Por meio desse link você pode ter acesso ao site.</p>
-<a href="https://frank-cardoso.github.io/FocusTimer/ target="_blank">Página</a>
+<a href="https://frank-cardoso.github.io/FocusTimer/" target="_blank">Página</a>
 
